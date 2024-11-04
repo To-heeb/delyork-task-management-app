@@ -348,5 +348,36 @@ return [
             'group'        => 'Subtask',
         ],
 
+        // Tags
+        'handle tags' => [
+            'display_name' => 'Handle all tags',
+            'description'  => 'Can handle all tags',
+            'group'        => 'Tag',
+        ],
+
+        'view tags' => [
+            'display_name' => 'View tags',
+            'description'  => 'Can view tags',
+            'group'        => 'Tag',
+        ],
+
+        'create tags' => [
+            'display_name' => 'Create tags',
+            'description'  => 'Can create tags',
+            'group'        => 'Tag',
+        ],
+
+        'update tags' => [
+            'display_name' => 'Update tags',
+            'description'  => 'Can update tags',
+            'group'        => 'Tag',
+        ],
+
+        'delete tags' => [
+            'display_name' => 'Delete tags',
+            'description'  => 'Can delete tags',
+            'group'        => 'Tag',
+        ],
+
     ]
 ];

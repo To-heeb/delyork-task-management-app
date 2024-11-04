@@ -1,7 +1,7 @@
 <?php
 
-use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Api\V1\TagController;
 use App\Http\Controllers\Api\V1\TaskController;
 use App\Http\Controllers\Api\V1\ProjectController;
 use App\Http\Controllers\Api\V1\SubtaskController;
@@ -50,6 +50,7 @@ Route::group([
             'projects'                  =>   ProjectController::class,
             'tasks'                     =>   TaskController::class,
             'subtasks'                  =>   SubtaskController::class,
+            'tags'                      =>   TagController::class,
         ]);
     });
 });

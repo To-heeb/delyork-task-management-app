@@ -20,6 +20,7 @@ class DatabaseSeeder extends Seeder
             ProjectSeeder::class,
             TaskSeeder::class,
             SubtaskSeeder::class,
+            TagSeeder::class,
         ]);
         // User::factory(10)->create();
 
