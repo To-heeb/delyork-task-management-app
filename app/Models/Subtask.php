@@ -5,7 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 
-class Task extends Model
+class Subtask extends Model
 {
     use HasFactory;
 
@@ -15,13 +15,10 @@ class Task extends Model
      * @var array<int, string>
      */
     protected $fillable = [
-        'project_id',
+        'task_id',
         'assigned_user_id',
         'title',
         'description',
-        'priority',
         'status',
-        'due_date',
-        'estimated_time',
     ];
 }

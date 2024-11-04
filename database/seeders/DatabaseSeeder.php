@@ -19,6 +19,7 @@ class DatabaseSeeder extends Seeder
             RoleSeeder::class,
             ProjectSeeder::class,
             TaskSeeder::class,
+            SubtaskSeeder::class,
         ]);
         // User::factory(10)->create();
 

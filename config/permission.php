@@ -317,5 +317,36 @@ return [
             'group'        => 'Task',
         ],
 
+        // Subtasks
+        'handle subtasks' => [
+            'display_name' => 'Handle all subtasks',
+            'description'  => 'Can handle all subtasks',
+            'group'        => 'Subtask',
+        ],
+
+        'view subtasks' => [
+            'display_name' => 'View subtasks',
+            'description'  => 'Can view subtasks',
+            'group'        => 'Subtask',
+        ],
+
+        'create subtasks' => [
+            'display_name' => 'Create subtasks',
+            'description'  => 'Can create subtasks',
+            'group'        => 'Subtask',
+        ],
+
+        'update subtasks' => [
+            'display_name' => 'Update subtasks',
+            'description'  => 'Can update subtasks',
+            'group'        => 'Subtask',
+        ],
+
+        'delete subtasks' => [
+            'display_name' => 'Delete subtasks',
+            'description'  => 'Can delete subtasks',
+            'group'        => 'Subtask',
+        ],
+
     ]
 ];

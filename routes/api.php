@@ -2,6 +2,7 @@
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Api\V1\TaskController;
 use App\Http\Controllers\Api\V1\ProjectController;
 use App\Http\Controllers\Api\V1\Auth\NewPasswordController;
 use App\Http\Controllers\Api\V1\Auth\VerifyEmailController;
@@ -46,6 +47,7 @@ Route::group([
 
         Route::apiResources([
             'projects'                    =>   ProjectController::class,
+            'tasks'                       =>   TaskController::class,
 
         ]);
     });

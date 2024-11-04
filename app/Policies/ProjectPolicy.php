@@ -34,7 +34,8 @@ class ProjectPolicy
      */
     public function view(User $user, Project $project): bool
     {
-        return $user->hasAnyPermission(['handle projects']) || ($user->hasPermissionTo('view projects') && $user->id === $project->user_id);
+        // TODO (toheeb): People that should view a project are those that have something to do with the project
+        return $user->hasAnyPermission(['handle projects', 'view projects']);
     }
 
     /**

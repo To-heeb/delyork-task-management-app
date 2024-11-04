@@ -34,6 +34,7 @@ class TaskPolicy
      */
     public function view(User $user, Task $task): bool
     {
+        // TODO (toheeb): People that should view a task are those that have something to do with the task
         return $user->hasAnyPermission(['handle tasks', 'view tasks']);
     }
 
