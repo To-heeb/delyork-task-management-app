@@ -379,5 +379,36 @@ return [
             'group'        => 'Tag',
         ],
 
+        // Comments
+        'handle comments' => [
+            'display_name' => 'Handle all comments',
+            'description'  => 'Can handle all comments',
+            'group'        => 'Comment',
+        ],
+
+        'view comments' => [
+            'display_name' => 'View comments',
+            'description'  => 'Can view comments',
+            'group'        => 'Comment',
+        ],
+
+        'create comments' => [
+            'display_name' => 'Create comments',
+            'description'  => 'Can create comments',
+            'group'        => 'Comment',
+        ],
+
+        'update comments' => [
+            'display_name' => 'Update comments',
+            'description'  => 'Can update comments',
+            'group'        => 'Comment',
+        ],
+
+        'delete comments' => [
+            'display_name' => 'Delete comments',
+            'description'  => 'Can delete comments',
+            'group'        => 'Comment',
+        ],
+
     ]
 ];

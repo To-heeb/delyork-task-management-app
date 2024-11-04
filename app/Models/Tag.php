@@ -35,4 +35,12 @@ class Tag extends Model
     {
         return $this->morphedByMany(Subtask::class, 'taggable');
     }
+
+    /**
+     * Get all of the subtasks that are assigned this tag.
+     */
+    // public function related(): MorphOne
+    // {
+    //     return $this->morphOne(Taggable::class, 'taggable');
+    // }
 }
