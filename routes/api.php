@@ -4,6 +4,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Api\V1\TaskController;
 use App\Http\Controllers\Api\V1\ProjectController;
+use App\Http\Controllers\Api\V1\SubtaskController;
 use App\Http\Controllers\Api\V1\Auth\NewPasswordController;
 use App\Http\Controllers\Api\V1\Auth\VerifyEmailController;
 use App\Http\Controllers\Api\V1\Auth\RegisteredUserController;
@@ -46,9 +47,9 @@ Route::group([
     ], function () {
 
         Route::apiResources([
-            'projects'                    =>   ProjectController::class,
-            'tasks'                       =>   TaskController::class,
-
+            'projects'                  =>   ProjectController::class,
+            'tasks'                     =>   TaskController::class,
+            'subtasks'                  =>   SubtaskController::class,
         ]);
     });
 });

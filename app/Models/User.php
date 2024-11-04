@@ -5,6 +5,7 @@ namespace App\Models;
 use Laravel\Sanctum\HasApiTokens;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
+use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 
@@ -45,6 +46,31 @@ class User extends Authenticatable implements MustVerifyEmail
             'email_verified_at' => 'datetime',
             'password' => 'hashed',
         ];
+    }
+
+    /**
+     * Get the projects that belongs to the user.
+     */
+    public function projects(): HasMany
+    {
+        return $this->hasMany(Project::class);
+    }
+
+
+    /**
+     * Get the tasks that belongs to the user.
+     */
+    public function tasks(): HasMany
+    {
+        return $this->hasMany(Task::class, 'assigned_user_id');
+    }
+
+    /**
+     * Get the tasks that belongs to the user.
+     */
+    public function subtasks(): HasMany
+    {
+        return $this->hasMany(Subtask::class, 'assigned_user_id');
     }
 
     /**

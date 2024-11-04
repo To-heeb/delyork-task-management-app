@@ -58,7 +58,7 @@ class SubtaskPolicy
      */
     public function delete(User $user, Subtask $subtask): bool
     {
-        // TODO(toheeb): eager load relationships here to make things faters
+        // TODO(toheeb): eager load relationships here to make things fast
         return $user->hasAnyPermission(['handle subtasks']) || ($user->hasPermissionTo('delete subtasks') && ($user->id === $subtask->task->project->user_id || $subtask->task->assigned_user_id));
     }
 

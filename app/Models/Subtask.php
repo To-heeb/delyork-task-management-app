@@ -3,6 +3,7 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 
 class Subtask extends Model
@@ -21,4 +22,20 @@ class Subtask extends Model
         'description',
         'status',
     ];
+
+    /**
+     * Get the task that owns the subtask.
+     */
+    public function task(): BelongsTo
+    {
+        return $this->belongsTo(Task::class);
+    }
+
+    /**
+     * Get the user that owns the task.
+     */
+    public function assignedUser()
+    {
+        return $this->belongsTo(User::class, 'assigned_user_id');
+    }
 }
