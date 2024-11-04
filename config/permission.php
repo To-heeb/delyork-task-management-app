@@ -285,5 +285,37 @@ return [
             'description'  => 'Can delete projects',
             'group'        => 'Project',
         ],
+
+        // Tasks
+        'handle tasks' => [
+            'display_name' => 'Handle all tasks',
+            'description'  => 'Can handle all tasks',
+            'group'        => 'Task',
+        ],
+
+        'view tasks' => [
+            'display_name' => 'View tasks',
+            'description'  => 'Can view tasks',
+            'group'        => 'Task',
+        ],
+
+        'create tasks' => [
+            'display_name' => 'Create tasks',
+            'description'  => 'Can create tasks',
+            'group'        => 'Task',
+        ],
+
+        'update tasks' => [
+            'display_name' => 'Update tasks',
+            'description'  => 'Can update tasks',
+            'group'        => 'Task',
+        ],
+
+        'delete tasks' => [
+            'display_name' => 'Delete tasks',
+            'description'  => 'Can delete tasks',
+            'group'        => 'Task',
+        ],
+
     ]
 ];
